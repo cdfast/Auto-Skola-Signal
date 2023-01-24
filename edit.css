@@ -1,0 +1,153 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  background-color: #f1f6f5;
+  box-sizing: border-box;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  margin-bottom: 220px;
+}
+
+.navbar {
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  transition: 300ms;
+}
+
+#navbarNav {
+  font-weight: 500;
+  font-size: 20px;
+  overflow: hidden;
+  transition: height 250ms;
+}
+
+.nav-item {
+  position: relative;
+  padding-right: 10px;
+}
+
+.navbar-brand {
+  padding-left: 10px;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.banner-image {
+  background-size: cover;
+  background-image: url("/static/img/banner.png");
+}
+
+.content {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  0% {
+    transform: translateY(100%);
+  }
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.text-grey {
+  margin: auto;
+  width: 75%;
+  color: #d3d3d3;
+}
+
+.text-white {
+  font-weight: 700;
+}
+
+.btn {
+  padding: 10px;
+}
+
+.text-about {
+  margin: auto;
+  text-align: center;
+}
+
+.col-card {
+  border: 2px solid;
+  margin: 2%;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 300px;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 80em) {
+  .footer {
+    height: fit-content;
+  }
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer {
+  padding-top: 30px;
+  background-color: #292c2f;
+  color: #bbb;
+  box-sizing: content-box;
+}
+
+footer a {
+  color: #999;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #aaa;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
+}
+
+footer .form-control {
+  background-color: #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+  color: #d1d2d2;
+  padding: 0.7em 1em;
+}
+
+
+.list-1:hover {
+  color: #93cbfb;
+}
